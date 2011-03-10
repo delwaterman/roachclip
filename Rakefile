@@ -8,7 +8,7 @@ begin
     gemspec.homepage = "http://github.com/ryana/roachclip"
     gemspec.authors = ["Ryan Angilly"]
 
-    gemspec.add_dependency 'joint', '0.3.2'
+    gemspec.add_dependency 'joint', '>=0.3.2'
     gemspec.add_dependency 'paperclip', '>=2.3.3'
  
     gemspec.add_development_dependency 'shoulda', '2.11.0'
