@@ -2,7 +2,7 @@ require 'set'
 require 'tempfile'
 require 'paperclip'
 require 'joint'
-require 'roachclip/validations'
+# require 'roachclip/validations'
 
 module Paperclip
   class << self
@@ -55,7 +55,8 @@ module Roachclip
     end
 
     def validates_roachclip(*args)
-      add_validations(args, Roachclip::Validations::ValidatesPresenceOf)
+      # add_validations(args, Roachclip::Validations::ValidatesPresenceOf)
+      add_validations(args, ::ActiveModel::Validations::PresenceValidator)
     end
   end
 
